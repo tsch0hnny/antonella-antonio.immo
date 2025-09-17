@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Marcellus&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Cutive+Mono&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Limelight&family=IM+Fell+French+Canon:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Fonts */
+/* NimbusSans-Regular */
+@font-face {
+  font-family: 'Nimbus Sans'; /* Or 'NimbusSans', consistency is key */
+  src: url('/fonts/nimbus-sans/NimbusSans-Regular.woff') format('woff');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NimbusSans-Italic */
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('/fonts/nimbus-sans/NimbusSans-Italic.woff') format('woff');
+  font-weight: 400; /* Regular */
+  font-style: italic;
+  font-display: swap;
+}
+
+/* NimbusSans-Bold */
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('/fonts/nimbus-sans/NimbusSans-Bold.woff') format('woff');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NimbusSans-BoldItalic */
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('/fonts/nimbus-sans/NimbusSans-BoldItalic.woff') format('woff');
+  font-weight: 700; /* Bold */
+  font-style: italic;
+  font-display: swap;
+}
+
+/* NimbusSansNarrow-Regular */
+@font-face {
+  font-family: 'Nimbus Sans Narrow'; /* A distinct font-family name */
+  src: url('/fonts/nimbus-sans/NimbusSansNarrow-Regular.woff') format('woff');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NimbusSansNarrow-Oblique */
+@font-face {
+  font-family: 'Nimbus Sans Narrow';
+  src: url('/fonts/nimbus-sans/NimbusSansNarrow-Oblique.woff') format('woff');
+  font-weight: 400; /* Regular */
+  font-style: italic; /* Oblique is generally mapped to italic for CSS */
+  font-display: swap;
+}
+
+/* NimbusSansNarrow-Bold */
+@font-face {
+  font-family: 'Nimbus Sans Narrow';
+  src: url('/fonts/nimbus-sans/NimbusSansNarrow-Bold.woff') format('woff');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* NimbusSansNarrow-BoldOblique */
+@font-face {
+  font-family: 'Nimbus Sans Narrow';
+  src: url('/fonts/nimbus-sans/NimbusSansNarrow-BoldOblique.woff')
+    format('woff');
+  font-weight: 700; /* Bold */
+  font-style: italic; /* Oblique is generally mapped to italic for CSS */
+  font-display: swap;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 20 14% 4%;
+
+        --card: 0 0% 100%;
+        --card-foreground: 20 14% 4%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 20 14% 4%;
+
+        --primary: 24 9% 10%;
+        --primary-foreground: 60 9% 98%;
+
+        --secondary: 60 4% 90%;
+        --secondary-foreground: 24 9% 11%;
+
+        --muted: 60 4% 90%;
+        --muted-foreground: 25 5% 45%;
+
+        --accent: 60 4% 90%;
+        --accent-foreground: 24 9% 11%;
+
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+
+        --border: 20 5% 90%;
+        --input: 20 5% 90%;
+        --ring: 24 5% 50%;
+
+        --radius: 0.5rem;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground font-sans;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-serif;
+    }
+}
+
+@layer components {
+    .container-custom {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .text-gradient {
+        @apply bg-gradient-to-r from-brand-charcoal to-brand-red bg-clip-text text-transparent;
+    }
+
+    .section-title {
+        @apply text-3xl md:text-4xl font-serif font-semibold mb-6 text-brand-charcoal;
+    }
+
+    .section-subtitle {
+        @apply text-xl md:text-2xl font-serif mb-4 text-brand-charcoal;
+    }
+
+    .btn-primary {
+        @apply bg-brand-red text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300;
+    }
+
+    .btn-secondary {
+        @apply bg-white border border-brand-red text-brand-red px-6 py-3 rounded-lg hover:bg-brand-red hover:text-white transition-all duration-300;
+    }
+
+    .property-card {
+        @apply bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-300;
+    }
+}
