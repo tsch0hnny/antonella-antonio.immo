@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 flex-col w-full sm:w-auto sm:flex-row">
-            <svg width="610" height="311" className="h-6 w-12" viewBox="0 0 610 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="610" height="311" className="h-16 w-12" viewBox="0 0 610 311" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M463.824 166.556C463.941 164.052 464 161.533 464 159C464 71.1867 392.813 0 305 0C217.187 0 146 71.1867 146 159C146 161.533 146.059 164.052 146.176 166.556L204 108L270 127.25L305 87L340 127.25L406 108L463.824 166.556Z" fill="#FBE3C4" />
               <path d="M276 144L204 124L248 175L276 144Z" fill="#8F8F8F" />
               <path d="M125 216L3 245H125L204 154V124L125 216Z" fill="#8F8F8F" />
@@ -42,10 +42,13 @@ const Navbar = () => {
               <rect x="275" y="281" width="27" height="27" fill="#8F8F8F" />
               <rect x="308" y="281" width="27" height="27" fill="#8F8F8F" />
             </svg>
-            <span className="text-xl md:text-2xl font-logo font-semibold">
-              <span>Antonella & Antonio </span>
-              <span className="text-brand-red"> Immobilien</span>
-            </span>
+	    <div className="flex flex-col">
+            	<span className="text-xl md:text-2xl font-logo font-semibold">
+              	    <span>Antonella & Antonio </span>
+              	    <span className="text-brand-red"> Immobilien</span>
+            	</span>
+		<span class="text-brand-red text-xs md:text-2xs">Gegründet um zu bleiben</span>
+	    </div>
           </Link>
 
           {/* Desktop Nav */}
