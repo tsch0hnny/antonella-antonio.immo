@@ -1,0 +1,17 @@
+<svg class="w-full sm:h-36 h-32 md:pl-8 pl-10 md:pr-8 pr-10 md:py-4 py-5" width="610" height="311" viewBox="0 0 610 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M463.824 166.556C463.941 164.052 464 161.533 464 159C464 71.1867 392.813 0 305 0C217.187 0 146 71.1867 146 159C146 161.533 146.059 164.052 146.176 166.556L204 108L270 127.25L305 87L340 127.25L406 108L463.824 166.556Z" fill="#FBE3C4"/>
+<path d="M276 144L204 124L248 175L276 144Z" fill="#8F8F8F"/>
+<path d="M125 216L3 245H125L204 154V124L125 216Z" fill="#8F8F8F"/>
+<path d="M204 154V124L248 175L235 190L204 154Z" fill="#CCCCCC"/>
+<path d="M0 311V304H183L305 161V170L185 311H0Z" fill="#8F8F8F"/>
+<path d="M181 252L305 109V154L181 298H3L181 252Z" fill="#BF0000"/>
+<path d="M334 144L406 124L362 175L334 144Z" fill="#8F8F8F"/>
+<path d="M485 216L607 245H485L406 154V124L485 216Z" fill="#8F8F8F"/>
+<path d="M406 154V124L362 175L375 190L406 154Z" fill="#CCCCCC"/>
+<path d="M610 311V304H427L305 161V170L425 311H610Z" fill="#8F8F8F"/>
+<path d="M429 252L305 109V154L429 298H607L429 252Z" fill="#BF0000"/>
+<rect x="275" y="248" width="27" height="27" fill="#8F8F8F"/>
+<rect x="308" y="248" width="27" height="27" fill="#8F8F8F"/>
+<rect x="275" y="281" width="27" height="27" fill="#8F8F8F"/>
+<rect x="308" y="281" width="27" height="27" fill="#8F8F8F"/>
+</svg>
