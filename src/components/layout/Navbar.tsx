@@ -42,7 +42,7 @@ const Navbar = () => {
               <rect x="275" y="281" width="27" height="27" fill="#8F8F8F" />
               <rect x="308" y="281" width="27" height="27" fill="#8F8F8F" />
             </svg>
-	    <div className="flex flex-col">
+	    <div className="flex flex-col text-center sm:text-left">
             	<span className="text-xl md:text-2xl font-logo font-semibold">
               	    <span>Antonella & Antonio </span>
               	    <span className="text-brand-red"> Immobilien</span>
